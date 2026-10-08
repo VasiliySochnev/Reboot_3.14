@@ -1,6 +1,6 @@
 from typing import Union
 
-from src.masks import get_mask_card_number, get_mask_account
+from src.masks import get_mask_account, get_mask_card_number
 
 
 def mask_account_card(coming_str: Union[str]) -> Union[str]:
@@ -17,7 +17,6 @@ def mask_account_card(coming_str: Union[str]) -> Union[str]:
         elif simbol.isdigit() and len(simbol) == 20:
             mask_number += get_mask_account(simbol) + " "
     return mask_number.strip()
-
 
 
 def get_date(date: str) -> str:
