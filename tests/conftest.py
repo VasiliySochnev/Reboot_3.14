@@ -19,3 +19,13 @@ def sort_id_dict_list():
         {"id": 594226727, "state": "CANCELED", "date": "2018-09-12T21:27:25.241689"},
         {"id": 615064591, "state": "CANCELED", "date": "2018-10-14T08:21:33.419441"},
     ]
+
+
+@pytest.fixture
+def card_str():
+    return "Visa Platinum 7000 79** **** 6361"
+
+
+@pytest.fixture
+def check_str():
+    return "Счет **5560"
