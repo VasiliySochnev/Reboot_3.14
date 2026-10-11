@@ -24,3 +24,15 @@ def get_date(date: str) -> str:
     гггг.мм.дд в формат дд.мм.гггг"""
 
     return f"{date[8:10]}.{date[5:7]}.{date[0:4]}"
+
+
+
+#
+# def main():
+#     coming_str = 'Счет 64686473678894779589'
+#     amount = mask_account_card(coming_str)
+#     print(amount)
+#
+# # Это "магическая" проверка
+# if __name__ == "__main__":
+#     main()
