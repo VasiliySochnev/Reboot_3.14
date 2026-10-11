@@ -26,7 +26,6 @@ def get_date(date: str) -> str:
     return f"{date[8:10]}.{date[5:7]}.{date[0:4]}"
 
 
-
 #
 # def main():
 #     coming_str = 'Счет 64686473678894779589'
